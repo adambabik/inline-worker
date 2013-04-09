@@ -1,0 +1,28 @@
+{
+  "name": "inline-worker",
+  "version": "0.1.0",
+  "description": "JavaScript library that helps run inline functions in Web Worker",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-contrib-jshint": "~0.4.3"
+  },
+  "keywords": [
+    "worker",
+    "webworker",
+    "asynchronous",
+    "inline"
+  ],
+  "repository": "",
+  "author": {
+    "name": "Adam Babik",
+    "url": "http://www.jsness.com"
+  },
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
