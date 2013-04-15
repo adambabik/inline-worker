@@ -12,7 +12,7 @@ More examples can be found in the test directory.
 
 ### Simple inline worker
 
-```
+```javascript
 // Define worker with inline function
 var inlineWorker = new InlineWorker(function (num) {
 	return num * num;
@@ -34,7 +34,7 @@ inlineWorker
 
 ### Injecting functions
 
-```
+```javascript
 function cube(n) {
 	return n * n;
 }
