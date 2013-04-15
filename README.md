@@ -66,7 +66,7 @@ inlineWorker.run(NUM);
 
 ## API
 
-#### Constructor
+### Constructor
 
 ##### `InlineWorker(callback(arg: any): function)`
 
@@ -74,7 +74,7 @@ Constructor which creates an inline worker instance using provided callback. It'
 
 * `callback(arg: any)` - `arg` is an argument passed to the worker when calling `run` method.
 
-#### Methods
+### Methods
 
 ##### then `([success(value: any): function], [error(value: ErrorEvent): function])`
 
@@ -99,7 +99,7 @@ This method injects functions to the worker.
 ## TODO
 
 * it should be possible to pass callback and required functions in this way `new InlineWorker([sqrt, cube], function () {...})`,
-* implement `addEventListener` (alias `on`) method to handle multiple listeners on success and error
+* implement `addEventListener` (alias `on`) method to handle multiple listeners on success and error,
 * implement MapReduce algorithm.
 
 ## Similar projects
