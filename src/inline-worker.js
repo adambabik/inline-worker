@@ -27,6 +27,7 @@
 
 		_assertWorker: function assertWorker() {
 			var blob;
+
 			if (this.worker) {
 				return;
 			}
@@ -45,7 +46,7 @@
 
 		_onMessage: function onMessage(e) {
 			this.resolve = e.data;
-			// then() has already been called
+			// if then() has already been called
 			if (this.onmessage) {
 				this.onmessage(e.data);
 			}
@@ -53,7 +54,7 @@
 
 		_onError: function onError(e) {
 			this.reject = e;
-			// then() has already been called
+			// if then() has already been called
 			if (this.onerror) {
 				this.onerror(e.message, e.filename, e.lineno, e);
 			}
@@ -61,7 +62,7 @@
 
 		then: function then(success, error) {
 			var err;
-			this._assertWorker();
+			//this._assertWorker();
 
 			if (typeof success === 'function') {
 				this.onmessage = success;
@@ -100,4 +101,5 @@
 	};
 
 	__global__.InlineWorker = InlineWorker;
+
 }(window));
